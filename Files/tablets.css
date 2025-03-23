@@ -27,4 +27,45 @@
     width: 100%;
     padding: 15px;
   }
+
+  /* Footer styles for tablets */
+  footer {
+    padding: 4vw 6vw;
+  }
+
+  footer .upper {
+    min-height: 30vh;
+  }
+
+  footer .upper .text {
+    font-size: 3.2vw;
+    max-width: 60%;
+  }
+
+  footer .upper .circle {
+    height: 12vw;
+    width: 12vw;
+    font-size: 1.8vw;
+  }
+
+  footer .lower {
+    gap: 5vw;
+  }
+
+  footer .lower .email-div {
+    width: 45%;
+    min-width: 250px;
+  }
+
+  footer .lower .email-div p {
+    font-size: 2.5vw;
+  }
+
+  footer .lower .links-div h6 {
+    font-size: 2.8vw;
+  }
+
+  footer .lower .links-div .parent-links {
+    gap: 4vw;
+  }
 }
