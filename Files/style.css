@@ -1,0 +1,666 @@
+@font-face {
+  font-family: pp-mori-regular;
+  src: url(../Content/fonts/PPMori-Regular.woff2)format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: pp-mori-bold;
+  src: url(../Content/fonts/PPMori-SemiBold.woff2)format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: suissetIntl-regular;
+  src: url(../Content/fonts/SuisseIntl-Regular-WebXL.woff2)format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+/* // cursor effect // */
+.cursor {
+  background-color: #edbfff;
+  position: fixed;
+  z-index: 9;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  transition: background-image all 0.5s;
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: difference;
+  transition: all linear 0.2s;
+}
+
+#purple {
+  background-color: #edbfff;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  opacity: 0;
+  display: none;
+  transition: all ease-in-out 1s;
+}
+
+.main {
+  background-color: #0f0d0d;
+}
+
+/* // marquee code starts from here // */
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 10vw;
+  position: absolute;
+  top: 40%;
+  font-weight: bold;
+  color: #333;
+  animation: marquee 50s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(5%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* // page1 starts from here // */
+.page1 {
+  position: relative;
+  z-index: 9;
+  height: max-content;
+  width: 100%;
+  padding-top: 12vw;
+}
+
+#nav {
+  padding: 0.625rem 5vw;
+  width: 100%;
+  position: fixed;
+  mix-blend-mode: difference;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 102;
+}
+
+#nav img {
+  height: 1.75rem;
+}
+
+.nav-part2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0.8vw 0.5vw;
+}
+
+.nav-part3 .circle {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+#nav h4 {
+  font-size: 0.73vw;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#nav h4:nth-child(1) {
+  border-bottom: 1.5px solid white;
+}
+
+.page1 h1 {
+  font-size: 9vw;
+  font-weight: 300;
+  font-family: pp mori;
+  letter-spacing: -2px;
+  margin-left: 13vw;
+}
+
+.page1 h2 {
+  font-size: 9vw;
+  font-weight: 300;
+  font-family: pp mori;
+  margin-left: 23vw;
+  letter-spacing: -2px;
+}
+
+.page1 .paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+  font-weight: 100;
+  font-family: pp mori;
+  margin-left: 2vw;
+}
+
+.page1 video {
+  width: 60%;
+  margin-top: 10vw;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* Page2 Starts from here */
+.page2 {
+  position: relative;
+  z-index: 9;
+  padding: 6.25rem 5vw;
+  width: 100%;
+  min-height: 80vh;
+  border-bottom: 0.125rem solid #6c6c6c;
+}
+
+.page2 h1 {
+  font-size: 7vw;
+  font-weight: 400;
+  color: #111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.page2-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+}
+
+.page2-left {
+  /* background-color: #edbfff; */
+  width: 37%;
+}
+
+.page2-right {
+  width: 24%;
+}
+
+.page2-left h2 {
+  line-height: 4vw;
+  font-size: 4vw;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #111;
+}
+
+.page2-right p {
+  color: #111;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.page2-right button {
+  background-color: #edbfff;
+  border: none;
+  width: 100%;
+  padding: 4px 0;
+  color: #111;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+
+/* // page3 starts form here // */
+.page3 {
+  /* background-color: #; */
+  width: 100%;
+  min-height: 185vh;
+  position: relative;
+  z-index: 9;
+  padding-top: 4vw;
+}
+
+.page3 h1 {
+  font-size: 7vw;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #111;
+  margin-left: 5vw;
+}
+
+.page3-part1 {
+  padding: 0 0.2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.page3-part1 img {
+  height: 31vw;
+  margin-top: 9vw;
+}
+
+.page3-part1 video {
+  height: 25vw;
+}
+
+.page3-part1 .image-corner {
+  color: #111;
+  margin-top: 0.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1vw;
+}
+
+.page3-part1 .video-corner {
+  color: #111;
+  margin-top: 0.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1vw;
+}
+
+.page3-part1 .p1 {
+  font-size: 1.3vw;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.page3-part1 .p2 {
+  font-size: 0.9vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.page3-part1 .second-image {
+  margin-left: 8vw;
+}
+
+.btn-div {
+  position: absolute;
+  width: 100vw;
+  /* background-color: aquamarine; */
+}
+
+.page3-part3 {
+  position: relative;
+  width: fit-content;
+  bottom: 6vw;
+  /* background-color: bisque; */
+  left: 64vw;
+}
+
+.page3-part3 .see-btn {
+  background-color: #edbfff;
+  padding: 0.4vw 1vw;
+  border: none;
+  font-weight: 600;
+  font-size: 0.95vw;
+  margin-top: 1vw;
+  border-radius: 10vw;
+}
+
+.page3-part3 .see-text {
+  color: #111;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 1.3vw;
+  letter-spacing: -0.05vw;
+}
+
+/* // page4 starts from here // */
+.page4 {
+  border-top: 0.1vw solid #fff;
+  /* background-color: #edbfff; */
+  position: relative;
+  min-height: 100vh;
+  padding: 2vw;
+  width: 100%;
+  z-index: 9;
+}
+
+.page4 .top-text {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.7vw;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.03vw;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page4 .top-text h1 {
+  font-size: 4vw;
+  color: #d884fa;
+  margin-bottom: -0.7vw;
+  font-weight: 600;
+  font-family: monospace;
+  letter-spacing: -0.1vw;
+}
+
+.element {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.element .text-div {
+  height: 9vw;
+  overflow: hidden;
+  /* background-color: bisque; */
+}
+
+.element:hover h1 {
+  cursor: pointer;
+  color: #d884fa;
+  transform: translateY(-100%);
+}
+
+.element:hover img {
+  transform: translateY(0%) rotate(0deg);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.element h1 {
+  font-size: 8vw;
+  font-weight: 400;
+  letter-spacing: -0.3vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: all ease-in-out 0.5s;
+}
+
+.element img {
+  height: 20vw;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+  position: absolute;
+  transform: translateY(20%) rotate(5deg);
+}
+
+.element img:nth-child(1) {
+  left: 3%;
+  bottom: 0%;
+  height: 20vw;
+}
+
+.element img:nth-child(3) {
+  right: 2%;
+  top: 100%;
+  height: 13vw;
+}
+
+.element2 img:nth-child(1) {
+  left: 3%;
+  top: 25%;
+  height: 20vw;
+}
+
+.element2 img:nth-child(3) {
+  right: 2%;
+  top: -120%;
+  height: 13vw;
+}
+
+/* // page5 starts from here// */
+.page5 {
+  width: 100%;
+  min-height: 100vh;
+  border-top: 0.1vw solid #fff;
+  /* background-color: lightcoral; */
+  padding: 8vw 5.8vw;
+  position: relative;
+  z-index: 9;
+}
+
+.page5 .clients {
+  /* background-color: lightgreen; */
+  border-bottom: 0.15vw solid #dadada;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.page5 .clients h3 {
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  font-weight: 500;
+  letter-spacing: -0.25vw;
+}
+
+.page5 .clients button {
+  border: 0.1vw solid #fff;
+  padding: 0.3vw 0.7vw;
+  font-size: 0.8vw;
+  color: #fff;
+  background-color: #111;
+  font-weight: 600;
+  border-radius: 1vw;
+}
+
+.page5 .box {
+  /* background-color: lightseagreen; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vw;
+  border-bottom: 0.1vw solid #fff;
+}
+
+.page5 .box h4 {
+  font-size: 1.5vw;
+  font-weight: 400;
+  font-family: monospace;
+  letter-spacing: -0.085vw;
+  color: rgb(77, 75, 75);
+}
+
+.page5 .box .name-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7vw;
+}
+
+.page5 .box .name-date h4 {
+  font-weight: 500;
+  font-size: 1.2vw;
+  letter-spacing: -0.06vw;
+  color: rgb(77, 75, 75);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* // Footer starts from here // */
+footer {
+  width: 100%;
+  min-height: 78vw;
+  padding: 2.2vw 9vw 2vw 6vw;
+  background-color: #edbfff;
+}
+
+footer .upper {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #0f0d0d 0.1vw solid;
+}
+
+footer .upper .text {
+  font-size: 2.8vw;
+  color: #111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.1vw;
+  text-transform: uppercase;
+}
+
+footer .upper .circle {
+  letter-spacing: -0.05vw;
+  font-size: 0.8vw;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #111;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  letter-spacing: -0.05vw;
+  align-items: center;
+  justify-content: center;
+  height: 10.4vw;
+  width: 10.4vw;
+}
+
+footer .lower {
+  width: 100%;
+  margin-top: 5vw;
+  min-height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: lightblue; */
+}
+
+footer .lower .email-div {
+  width: 35%;
+  /* background-color: yellow; */
+}
+
+footer .lower .email-div p {
+  padding-bottom: 2.5vw;
+  font-size: 1.8vw;
+  color: #111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.1vw;
+}
+
+footer .lower .email-div .input {
+  background-color: transparent;
+  border-bottom: 0.1vw solid #111;
+  padding-bottom: 0.35vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .lower .email-div input {
+  border: none;
+  outline: none;
+  font-weight: 500;
+  background-color: transparent;
+  width: 100%;
+  font-size: 1.15vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  color: #111;
+}
+
+footer .lower .email-div button {
+  background-color: transparent;
+  color: #111;
+  border: #111 0.1vw solid;
+  padding: 0.25vw 0.8vw;
+  font-size: 0.8vw;
+  font-weight: 600;
+  border-radius: 1vw;
+}
+
+footer .lower .links-div {
+  padding: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  width: fit-content;
+}
+
+footer .lower .links-div h6 {
+  font-size: 1.7vw;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: -0.05vw;
+  color: #111;
+}
+
+footer .lower .links-div .parent-links {
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .lower .links-div .parent-links .a-div {
+  display: flex;
+  letter-spacing: -0.1;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+footer .lower .links-div .parent-links .a-div p {
+  letter-spacing: -0.02vw;
+  font-size: 1.2vw;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #111;
+}
+
+footer .lower .links-div .parent-links .a-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1vw;
+}
+
+footer .lower .links-div .parent-links .a-lists a {
+  letter-spacing: -0.02vw;
+  font-size: 0.83vw;
+  color: #0f0d0d;
+  /* background-color: violet; */
+  font-weight: 600;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}

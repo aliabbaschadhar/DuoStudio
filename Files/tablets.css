@@ -1,0 +1,30 @@
+@font-face {
+  font-family: pp-mori-regular;
+  src: url(../Content/fonts/PPMori-Regular.woff2)format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: pp-mori-bold;
+  src: url(../Content/fonts/PPMori-SemiBold.woff2)format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: suissetIntl-regular;
+  src: url(../Content/fonts/SuisseIntl-Regular-WebXL.woff2)format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Medium screens (Tablets) */
+@media (max-width: 992px) {
+
+  /* Tablets */
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+}
