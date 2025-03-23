@@ -1,22 +1,25 @@
 @font-face {
-  font-family: pp-mori-regular;
-  src: url(../Content/fonts/PPMori-Regular.woff2)format("woff2");
-  font-weight: normal;
+  font-family: 'pp-mori-regular';
+  src: url(../Content/fonts/PPMori-Regular.woff2) format('woff2');
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: pp-mori-bold;
-  src: url(../Content/fonts/PPMori-SemiBold.woff2)format("woff2");
-  font-weight: bold;
+  font-family: 'pp-mori-bold';
+  src: url(../Content/fonts/PPMori-SemiBold.woff2) format('woff2');
+  font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: suissetIntl-regular;
-  src: url(../Content/fonts/SuisseIntl-Regular-WebXL.woff2)format("woff2");
-  font-weight: normal;
+  font-family: 'suissetIntl-regular';
+  src: url(../Content/fonts/SuisseIntl-Regular-WebXL.woff2) format('woff2');
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -113,8 +116,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'suissetIntl-regular', sans-serif;
   padding: 0.8vw 0.5vw;
 }
 
@@ -138,7 +140,7 @@ html {
 .page1 h1 {
   font-size: 9vw;
   font-weight: 300;
-  font-family: pp mori;
+  font-family: 'suissetIntl-regular', sans-serif;
   letter-spacing: -2px;
   margin-left: 13vw;
 }
@@ -146,7 +148,7 @@ html {
 .page1 h2 {
   font-size: 9vw;
   font-weight: 300;
-  font-family: pp mori;
+  font-family: 'pp-mori-regular', sans-serif;
   margin-left: 23vw;
   letter-spacing: -2px;
 }
@@ -157,7 +159,7 @@ html {
   align-items: center;
   font-size: 1.5vw;
   font-weight: 100;
-  font-family: pp mori;
+  font-family: 'pp-mori-regular', sans-serif;
   margin-left: 2vw;
 }
 
@@ -183,8 +185,7 @@ html {
   font-size: 7vw;
   font-weight: 400;
   color: #111;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'pp-mori-bold', sans-serif;
 }
 
 .page2-container {
@@ -208,8 +209,7 @@ html {
   line-height: 4vw;
   font-size: 4vw;
   font-weight: 200;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'pp-mori-bold', sans-serif;
   color: #111;
 }
 
@@ -217,8 +217,7 @@ html {
   color: #111;
   font-size: 1.5rem;
   font-weight: 400;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'pp-mori-regular', sans-serif;
 }
 
 .page2-right button {
@@ -244,8 +243,7 @@ html {
 .page3 h1 {
   font-size: 7vw;
   font-weight: 500;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'pp-mori-bold', sans-serif;
   color: #111;
   margin-left: 5vw;
 }
@@ -287,14 +285,12 @@ html {
 .page3-part1 .p1 {
   font-size: 1.3vw;
   font-weight: 600;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "suissetIntl-regular", sans-serif;
 }
 
 .page3-part1 .p2 {
   font-size: 0.9vw;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "suissetIntl-regular", sans-serif;
 }
 
 .page3-part1 .second-image {
@@ -327,7 +323,7 @@ html {
 
 .page3-part3 .see-text {
   color: #111;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'pp-mori-regular', sans-serif;
   font-weight: 400;
   font-size: 1.3vw;
   letter-spacing: -0.05vw;
@@ -346,7 +342,7 @@ html {
 
 .page4 .top-text {
   color: #fff;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "pp-mori-bold", Arial, sans-serif;
   font-size: 0.7vw;
   font-weight: 600;
   text-align: center;
@@ -399,8 +395,7 @@ html {
   font-size: 8vw;
   font-weight: 400;
   letter-spacing: -0.3vw;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'pp-mori-regular', sans-serif;
   transition: all ease-in-out 0.5s;
 }
 
@@ -454,8 +449,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 2vw 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "pp-mori-regular", Arial, sans-serif;
 }
 
 .page5 .clients h3 {
@@ -528,8 +522,7 @@ footer .upper {
 footer .upper .text {
   font-size: 2.8vw;
   color: #111;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'pp-mori-bold', sans-serif;
   font-weight: 700;
   letter-spacing: -0.1vw;
   text-transform: uppercase;
@@ -537,7 +530,7 @@ footer .upper .text {
 
 footer .upper .circle {
   letter-spacing: -0.05vw;
-  font-size: 0.8vw;
+  font-size: 1vw;
   font-weight: 600;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -571,8 +564,7 @@ footer .lower .email-div p {
   padding-bottom: 2.5vw;
   font-size: 1.8vw;
   color: #111;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "suissetIntl-regular", sans-serif;
   font-weight: 500;
   letter-spacing: -0.1vw;
 }
@@ -593,8 +585,7 @@ footer .lower .email-div input {
   background-color: transparent;
   width: 100%;
   font-size: 1.15vw;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'pp-mori-regular', sans-serif;
   font-weight: 400;
   color: #111;
 }
@@ -620,8 +611,7 @@ footer .lower .links-div {
 footer .lower .links-div h6 {
   font-size: 1.7vw;
   font-weight: 500;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'pp-mori-regular', sans-serif;
   letter-spacing: -0.05vw;
   color: #111;
 }
@@ -643,8 +633,7 @@ footer .lower .links-div .parent-links .a-div p {
   letter-spacing: -0.02vw;
   font-size: 1.2vw;
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'pp-mori-regular', sans-serif;
   color: #111;
 }
 
@@ -659,8 +648,7 @@ footer .lower .links-div .parent-links .a-lists a {
   font-size: 0.83vw;
   color: #0f0d0d;
   /* background-color: violet; */
-  font-weight: 600;
+  font-weight: 300;
   text-decoration: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'suissetIntl-regular', sans-serif;
 }
