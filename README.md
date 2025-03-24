@@ -86,6 +86,7 @@ The website is fully responsive with layouts optimized for:
 - Fonts: PP Mori and Suisse Intl
 - GSAP animation library
 - Locomotive Scroll for smooth scrolling effects
+- Developed in collaboration with [Waqar Hassan](https://github.com/WaqarHassan20)
 
 ## License
 
