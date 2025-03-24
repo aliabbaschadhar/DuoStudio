@@ -1,19 +1,26 @@
 function init() {
+  // Register the ScrollTrigger plugin with GSAP
   gsap.registerPlugin(ScrollTrigger);
 
+  // Initialize LocomotiveScroll for smooth scrolling
   const locoScroll = new LocomotiveScroll({
-    el: document.querySelector(".main"),
-    smooth: true,
+    el: document.querySelector(".main"), // Target the main element
+    smooth: true, // Enable smooth scrolling
   });
+
+  // Update ScrollTrigger on LocomotiveScroll scroll events
   locoScroll.on("scroll", ScrollTrigger.update);
 
+  // Set up ScrollTrigger scroller proxy for LocomotiveScroll
   ScrollTrigger.scrollerProxy(".main", {
     scrollTop(value) {
+      // Override scrollTop method for ScrollTrigger
       return arguments.length
-        ? locoScroll.scrollTo(value, 0, 0)
-        : locoScroll.scroll.instance.scroll.y;
+        ? locoScroll.scrollTo(value, 0, 0) // Scroll to the specified value
+        : locoScroll.scroll.instance.scroll.y; // Get current scroll position
     },
     getBoundingClientRect() {
+      // Define bounding rectangle for the scroller
       return {
         top: 0,
         left: 0,
@@ -21,13 +28,16 @@ function init() {
         height: window.innerHeight,
       };
     },
+    // Determine pin type based on transform support
     pinType: document.querySelector(".main").style.transform
       ? "transform"
       : "fixed",
   });
 
+  // Update LocomotiveScroll on ScrollTrigger refresh
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
+  // Refresh ScrollTrigger to apply changes
   ScrollTrigger.refresh();
 }
 
@@ -123,10 +133,31 @@ timeline3.to(".main", {
 
 var cursor = document.querySelector(".cursor");
 var main = document.querySelector(".main");
+let mouseX = 0, mouseY = 0;
+let cursorX = 0, cursorY = 0;
+
+// Add transition to cursor in CSS
+cursor.style.transition = "background-image 0.3s ease";
+
 document.addEventListener("mousemove", (dets) => {
-  cursor.style.left = dets.clientX + 7 + "px";
-  cursor.style.top = dets.clientY + 7 + "px";
+  mouseX = dets.clientX;
+  mouseY = dets.clientY;
 });
+
+// Use requestAnimationFrame for smoother cursor movement
+function animateCursor() {
+  // Add easing effect with interpolation
+  const ease = 0.1;
+  cursorX += (mouseX - cursorX) * ease;
+  cursorY += (mouseY - cursorY) * ease;
+
+  cursor.style.left = cursorX + 7 + "px";
+  cursor.style.top = cursorY + 7 + "px";
+
+  requestAnimationFrame(animateCursor);
+}
+
+animateCursor();
 
 // ------------------------------- //
 // Clients reviews hovering effect //

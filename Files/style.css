@@ -116,7 +116,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'suissetIntl-regular', sans-serif;
+  font-family: 'pp-mori-regular', sans-serif;
   padding: 0.8vw 0.5vw;
 }
 
@@ -129,7 +129,7 @@ html {
 
 #nav h4 {
   font-size: 0.73vw;
-  font-weight: 500;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -230,6 +230,15 @@ html {
   border-radius: 50px;
 }
 
+.page2-right button:hover {
+  background-color: #111;
+  color: #edbfff;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  scale: 1.1;
+  font-weight: 800;
+}
+
 /* // page3 starts form here // */
 .page3 {
   /* background-color: #; */
@@ -321,6 +330,15 @@ html {
   border-radius: 10vw;
 }
 
+.page3-part3 .see-btn:hover {
+  background-color: white;
+  color: #a159bd;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  scale: 1.1;
+  font-weight: 800;
+}
+
 .page3-part3 .see-text {
   color: #111;
   font-family: 'pp-mori-regular', sans-serif;
@@ -375,7 +393,7 @@ html {
 
 .element .text-div {
   height: 9vw;
-  overflow: hidden;
+  overflow-y: hidden;
   /* background-color: bisque; */
 }
 
@@ -460,13 +478,22 @@ html {
 }
 
 .page5 .clients button {
-  border: 0.1vw solid #fff;
-  padding: 0.3vw 0.7vw;
+  border: 0.2vw solid #fff;
+  padding: 0.5vw 0.9vw;
   font-size: 0.8vw;
   color: #fff;
   background-color: #111;
   font-weight: 600;
   border-radius: 1vw;
+}
+
+.page5 .clients button:hover {
+  background-color: #fff;
+  color: #111;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  scale: 1.1;
+  font-weight: 800;
 }
 
 .page5 .box {
@@ -550,6 +577,14 @@ footer .upper .circle {
   width: 10.4vw;
 }
 
+footer .upper .circle:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: all linear 0.2s;
+  background-color: #111;
+  color: #edbfff;
+}
+
 footer .lower {
   width: 100%;
   margin-top: 5vw;
@@ -599,11 +634,20 @@ footer .lower .email-div input {
 footer .lower .email-div button {
   background-color: transparent;
   color: #111;
-  border: #111 0.1vw solid;
+  border: #111 0.2vw solid;
   padding: 0.25vw 0.8vw;
   font-size: 0.8vw;
   font-weight: 600;
   border-radius: 1vw;
+}
+
+footer .lower .email-div button:hover {
+  cursor: pointer;
+  background-color: #111;
+  color: #fff;
+  transition: all linear 0.2s;
+  scale: 1.1;
+  font-weight: 800;
 }
 
 footer .lower .links-div {
@@ -620,6 +664,14 @@ footer .lower .links-div h6 {
   font-family: 'pp-mori-regular', sans-serif;
   letter-spacing: -0.05vw;
   color: #111;
+}
+
+footer .lower .links-div h6:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: all linear 0.2s;
+  color: #111;
+  font-weight: 500;
 }
 
 footer .lower .links-div .parent-links {
@@ -651,10 +703,18 @@ footer .lower .links-div .parent-links .a-lists {
 
 footer .lower .links-div .parent-links .a-lists a {
   letter-spacing: -0.02vw;
-  font-size: 0.83vw;
+  font-size: 0.9vw;
   color: #0f0d0d;
   /* background-color: violet; */
-  font-weight: 300;
+  font-weight: 500;
   text-decoration: none;
   font-family: 'pp-mori-regular', sans-serif;
+}
+
+footer .lower .links-div .parent-links .a-lists a:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: all linear 0.2s;
+  color: #111;
+  font-weight: 700;
 }
